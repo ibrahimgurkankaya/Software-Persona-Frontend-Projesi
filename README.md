@@ -2,7 +2,7 @@
 
 Okuduğun kitapları, izlediğin film ve dizileri tek bir rafta toplayan; **React**, **TypeScript** ve **Tailwind CSS** ile geliştirilmiş bir web uygulaması. Veriler tarayıcının **LocalStorage** alanında saklanır, sayfa yenilense de kaybolmaz.
 
-> **Canlı demo:** _Netlify'a yükledikten sonra linki buraya ekle_ (örn. `https://rafim.netlify.app`)
+> **Canlı demo:https://benimrafim.netlify.app/
 
 ![Rafım ana sayfa](screenshots/01-liste.png)
 
