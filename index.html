@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rafım - Okuduğun kitapları, izlediğin film ve dizileri tek bir yerde takip et." />
+    <title>Rafım | Okuma & İzleme Listesi</title>
+    <script>
+      // Sayfa açılırken tema tercihini hemen uygula (beyaz ekran yanıp sönmesin)
+      try {
+        var theme = localStorage.getItem('rafim-theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

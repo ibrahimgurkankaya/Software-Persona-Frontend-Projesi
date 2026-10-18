@@ -1,0 +1,14 @@
+# Netlify yayın ayarları
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# React Router (SPA) için: tüm adresleri index.html'e yönlendir,
+# böylece /ekle veya /duzenle/... sayfası yenilendiğinde 404 alınmaz.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
